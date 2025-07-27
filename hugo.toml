@@ -1,0 +1,33 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Demo Menu Site"
+
+[menu]
+
+[[menu.main]]
+identifier = "services"
+name = "Services"
+url = "/services/"
+weight = 1
+
+  [[menu.main]]
+  parent = "services"
+  name = "Consulting"
+  url = "/services/consulting/"
+  weight = 1
+
+  [[menu.main]]
+  parent = "services"
+  name = "Development"
+  url = "/services/development/"
+  weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 3
